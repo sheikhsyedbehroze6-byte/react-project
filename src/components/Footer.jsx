@@ -1,9 +1,12 @@
-const Footer = () => {
+export default function Footer() {
   return (
     <footer>
-      <p>&copy; {new Date().getFullYear()} Business Pro. All rights reserved.</p>
+      <div className="container" style={{ padding: '1rem', margin: 0 }}>
+        <h2>www.MA pesticides.ac.in</h2>
+        <p>Your Trusted Agricultural Partner in Kashmir</p>
+        <p>📍 Ground Floor, Opposite Fly Over, near Crime Branch, Srinagar, J&K</p>
+        <p>&copy; {new Date().getFullYear()} MA Pesticides. All rights reserved.</p>
+      </div>
     </footer>
   );
-};
-
-export default Footer;
+}

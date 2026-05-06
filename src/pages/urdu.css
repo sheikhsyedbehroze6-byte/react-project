@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+
+.urdu-text {
+  font-family: 'Noto Nastaliq Urdu', 'Arial', sans-serif;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.bilingual-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.disease-content, .disease-cure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.urdu-side {
+  border-right: 2px solid var(--bg-main);
+  padding-right: 1.5rem;
+  text-align: right;
+}
+
+.english-side {
+  padding-left: 0.5rem;
+}
+
+.crop-badge {
+  background: var(--bg-main);
+  color: var(--primary-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .disease-content, .disease-cure {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .urdu-side {
+    border-right: none;
+    padding-right: 0;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+  }
+}

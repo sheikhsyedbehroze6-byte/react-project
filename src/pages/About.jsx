@@ -1,28 +1,116 @@
-const About = () => {
+import AnimatedSection from '../components/AnimatedSection';
+import { ShieldCheck, Award, Globe, TreeDeciduous } from 'lucide-react';
+import { motion } from 'framer-motion';
+
+// Swaying Tree Component
+const SwayingTree = ({ delay, left, size, color }) => {
   return (
-    <div>
-      <h2 className="section-title">About Us</h2>
-      <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
-        <div style={{ flex: 1, minWidth: '300px' }}>
-          <p style={{ marginBottom: '1rem' }}>
-            Founded in 2026, Business Pro was established with a singular vision: 
-            to simplify modern business solutions for growing companies.
-          </p>
-          <p>
-            We believe in transparency, innovation, and pushing the boundaries of 
-            what is possible in web development and corporate services.
-          </p>
-        </div>
-        <div style={{ flex: 1, minWidth: '300px', background: 'var(--bg-offset)', padding: '2rem', borderRadius: '8px' }}>
-          <h3>Our Mission</h3>
-          <p style={{ marginTop: '1rem' }}>
-            To deliver outstanding results through creative strategy and 
-            technological expertise, driving success for every client we partner with.
-          </p>
+    <motion.div
+      style={{ position: 'absolute', bottom: '0', left: left, zIndex: 0, originY: 1 }}
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 0.3 }}
+      transition={{ type: "spring", stiffness: 40, delay: delay, duration: 2 }}
+    >
+      <motion.div
+        animate={{ rotate: [-2, 4, -3, 2, -2] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: delay }}
+        style={{ originY: 1 }}
+      >
+        <TreeDeciduous size={size} color={color} strokeWidth={1} />
+      </motion.div>
+    </motion.div>
+  );
+};
+
+export default function About() {
+  return (
+    <div style={{ position: 'relative', overflow: 'hidden', minHeight: '80vh', paddingBottom: '4rem' }}>
+      
+      {/* Animated Orchard Background */}
+      <SwayingTree delay={0.2} left="5%" size={250} color="var(--primary-color)" />
+      <SwayingTree delay={1.5} left="15%" size={180} color="var(--primary-color)" />
+      <SwayingTree delay={0.8} left="80%" size={300} color="var(--primary-color)" />
+      <SwayingTree delay={2.0} left="70%" size={200} color="var(--primary-color)" />
+
+      <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+        <AnimatedSection className="section-header">
+          <h2>About MA Pesticides</h2>
+          <p>Providing the highest quality agricultural solutions to Kashmiri farmers.</p>
+          
+          <motion.div 
+            style={{ marginTop: '2rem', marginBottom: '2rem', display: 'flex', justifyContent: 'center' }}
+            whileHover={{ scale: 1.02 }}
+            transition={{ type: "spring" }}
+          >
+            <img 
+              src="/apple.jpg" 
+              alt="Fresh Kashmiri Apples" 
+              onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=1200&q=80"; }}
+              style={{ 
+                width: '100%', 
+                maxWidth: '800px', 
+                height: '400px', 
+                objectFit: 'cover', 
+                borderRadius: '20px', 
+                boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
+                border: '4px solid white'
+              }} 
+            />
+          </motion.div>
+        </AnimatedSection>
+
+        <div style={{ display: 'grid', gap: '2rem', maxWidth: '900px', margin: '0 auto' }}>
+          <AnimatedSection delay={0.1} style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', padding: '2rem', borderRadius: '12px', boxShadow: '0 15px 40px rgba(0,0,0,0.1)' }}>
+            <h3 style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--primary-color)', marginBottom: '1rem' }}>
+              <Award size={28} /> Premium Foreign Brands
+            </h3>
+            <p style={{ fontSize: '1.1rem', marginBottom: '1rem' }}>
+              At MA Pesticides, we believe that the health of your crops directly translates to the prosperity of our community. That is why we refuse to compromise on quality. 
+            </p>
+            <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
+              We specialize in providing <strong>100% genuine, foreign-branded products</strong> from world-renowned agricultural science companies like <strong>Bayer</strong> and <strong>Syngenta</strong>. By bringing these international standards directly to Lal Chowk, we ensure that you get the most effective, research-backed solutions available globally.
+            </p>
+
+            {/* Product Images Grid */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginTop: '1rem' }}>
+              <div style={{ textAlign: 'center' }}>
+                <motion.img 
+                  src="/antracol.png" 
+                  alt="Bayer Products" 
+                  style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', border: '3px solid var(--border-color)' }}
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring" }}
+                />
+                <h4 style={{ marginTop: '0.8rem', color: 'var(--text-main)' }}>Bayer CropScience Range</h4>
+              </div>
+              <div style={{ textAlign: 'center' }}>
+                <motion.img 
+                  src="/syngenta.png" 
+                  alt="Syngenta Products" 
+                  style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', border: '3px solid var(--border-color)' }}
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring" }}
+                />
+                <h4 style={{ marginTop: '0.8rem', color: 'var(--text-main)' }}>Syngenta Premium Solutions</h4>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+            <AnimatedSection delay={0.3} style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', padding: '2rem', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)' }}>
+              <Globe size={32} color="var(--primary-color)" style={{ marginBottom: '1rem' }} />
+              <h3 style={{ color: 'var(--primary-color)', marginBottom: '0.5rem' }}>Global Standards</h3>
+              <p style={{ color: 'var(--text-muted)' }}>We import and supply products that meet rigorous international testing standards, ensuring maximum efficacy against local Kashmiri crop diseases.</p>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.4} style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', padding: '2rem', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)' }}>
+              <ShieldCheck size={32} color="var(--primary-color)" style={{ marginBottom: '1rem' }} />
+              <h3 style={{ color: 'var(--primary-color)', marginBottom: '0.5rem' }}>Guaranteed Authenticity</h3>
+              <p style={{ color: 'var(--text-muted)' }}>Counterfeit pesticides can destroy an entire season's harvest. We guarantee the authenticity of every Bayer and Syngenta product you purchase from us.</p>
+            </AnimatedSection>
+          </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default About;
+}

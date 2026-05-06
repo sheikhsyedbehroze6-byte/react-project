@@ -1,0 +1,43 @@
+import { motion } from 'framer-motion';
+import { ShieldCheck, Droplets } from 'lucide-react';
+
+export default function ProductCard({ product }) {
+  return (
+    <motion.div
+      whileHover={{ y: -10 }}
+      className="product-card"
+    >
+      <div className="product-image-container" style={{ overflow: 'hidden' }}>
+        <motion.img 
+          src={product.image} 
+          alt={product.name} 
+          className="product-image"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.4 }}
+        />
+        <span className="product-type-badge">{product.type}</span>
+      </div>
+      <div className="product-info">
+        <h3>{product.name}</h3>
+        <p className="product-uses">{product.uses}</p>
+        
+        <div className="product-details">
+          <div className="detail-item">
+            <Droplets size={16} className="detail-icon" />
+            <span><strong>Dosage:</strong> {product.dosage}</span>
+          </div>
+          <div className="detail-item">
+            <ShieldCheck size={16} className="detail-icon" />
+            <span><strong>Benefits:</strong> {product.benefits}</span>
+          </div>
+        </div>
+        
+        <div className="disease-tags">
+          {product.diseases.map(disease => (
+            <span key={disease} className="disease-tag">{disease}</span>
+          ))}
+        </div>
+      </div>
+    </motion.div>
+  );
+}
