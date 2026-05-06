@@ -19,36 +19,57 @@ export default function DiseaseGuide() {
 
       <div className="diseases-grid">
         {diseases.map((disease, index) => (
-          <AnimatedSection key={disease.id} delay={index * 0.05} className="disease-card bilingual-card">
+          <AnimatedSection 
+            key={disease.id} 
+            delay={index * 0.05} 
+            className={`disease-card bilingual-card ${disease.severity === 'High' ? 'severity-high' : ''}`}
+            style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}
+          >
+            {disease.image && (
+              <div className="disease-image-container" style={{ margin: '-1.5rem -1.5rem 1.5rem -1.5rem', height: '180px', overflow: 'hidden' }}>
+                <img 
+                  src={disease.image} 
+                  alt={disease.name} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                  onError={(e) => { e.target.style.display = 'none'; }}
+                />
+              </div>
+            )}
             
             <div className="disease-header">
               <span className="crop-badge"><Leaf size={14} style={{marginRight: '4px'}}/> {disease.crop}</span>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '1rem' }}>
-                <h3><AlertTriangle size={20} style={{marginRight: '8px'}}/> {disease.name}</h3>
-                <h3 className="urdu-text" dir="rtl">{disease.nameUrdu}</h3>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '1rem', gap: '1rem' }}>
+                <h3 style={{ margin: 0 }}><AlertTriangle size={20} style={{marginRight: '8px'}}/> {disease.name}</h3>
+                <h3 className="urdu-text" dir="rtl" style={{ margin: 0 }}>{disease.nameUrdu}</h3>
               </div>
             </div>
 
-            <div className="disease-content">
+            <div className="disease-content" style={{ flex: 1 }}>
               <div className="english-side">
                 <p><strong>Symptoms:</strong> {disease.symptoms}</p>
-                <p><strong>Severity:</strong> <span style={{ color: disease.severity === 'High' ? 'red' : 'orange' }}>{disease.severity}</span></p>
+                <p><strong>Severity:</strong> <span style={{ 
+                  color: disease.severity === 'High' ? '#ff1744' : 'orange',
+                  fontWeight: 'bold',
+                  textTransform: 'uppercase',
+                  fontSize: '0.85rem',
+                  letterSpacing: '0.5px'
+                }}>{disease.severity}</span></p>
               </div>
               <div className="urdu-side urdu-text" dir="rtl">
                 <p><strong>علامات:</strong> {disease.symptomsUrdu}</p>
               </div>
             </div>
             
-            <div className="disease-cure">
+            <div className="disease-cure" style={{ background: 'rgba(26, 93, 26, 0.03)', padding: '1rem', borderRadius: '8px', border: '1px solid rgba(26, 93, 26, 0.1)' }}>
               <div className="english-side">
                 <p><CheckCircle size={16} color="var(--primary-color)" style={{ verticalAlign: 'middle', marginRight: '5px' }}/>
                 <strong>Recommended Cure:</strong> {disease.cure}</p>
-                <p style={{ marginTop: '0.5rem' }}><strong>Dosage:</strong> {disease.dosage}</p>
+                <p style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}><strong>Dosage:</strong> {disease.dosage}</p>
               </div>
               <div className="urdu-side urdu-text" dir="rtl">
                 <p><CheckCircle size={16} color="var(--primary-color)" style={{ verticalAlign: 'middle', marginLeft: '5px' }}/>
                 <strong>علاج:</strong> {disease.cureUrdu}</p>
-                <p style={{ marginTop: '0.5rem' }}><strong>مقدار:</strong> {disease.dosageUrdu}</p>
+                <p style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}><strong>مقدار:</strong> {disease.dosageUrdu}</p>
               </div>
             </div>
           </AnimatedSection>

@@ -53,7 +53,8 @@ export const diseases = [
     cureUrdu: "ایپل گارڈ پلس (پھپھوندی کش)",
     dosage: "2.5 ml/Litre. Spray every 10-14 days.",
     dosageUrdu: "2.5 ملی لیٹر فی لیٹر۔ ہر 10-14 دن بعد سپرے کریں۔",
-    severity: "High"
+    severity: "High",
+    image: "/apple-scab.png"
   },
   {
     id: "d2",
@@ -66,7 +67,8 @@ export const diseases = [
     cureUrdu: "سکیل کل (کیڑے مار دوا) + تیل",
     dosage: "1.5 ml/Litre mixed with horticultural oil.",
     dosageUrdu: "1.5 ملی لیٹر فی لیٹر تیل کے ساتھ ملا کر۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&q=80"
   },
   {
     id: "d3",
@@ -79,7 +81,8 @@ export const diseases = [
     cureUrdu: "سلفر پر مبنی پھپھوندی کش",
     dosage: "2 ml/Litre at pink bud stage.",
     dosageUrdu: "2 ملی لیٹر فی لیٹر کلیوں کے نکلتے وقت۔",
-    severity: "Medium"
+    severity: "Medium",
+    image: "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&q=80"
   },
   {
     id: "d4",
@@ -92,7 +95,8 @@ export const diseases = [
     cureUrdu: "مائٹ ایکس پریمیئم",
     dosage: "1 ml/Litre of water.",
     dosageUrdu: "1 ملی لیٹر فی لیٹر پانی۔",
-    severity: "Medium"
+    severity: "Medium",
+    image: "https://images.unsplash.com/photo-1596704104278-68eecab902fb?w=800&q=80"
   },
   {
     id: "d5",
@@ -105,7 +109,8 @@ export const diseases = [
     cureUrdu: "نظاماتی کیڑے مار دوا",
     dosage: "2 ml/Litre applied near roots or sprayed.",
     dosageUrdu: "2 ملی لیٹر فی لیٹر پانی، جڑوں یا پتوں پر۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1621689626127-6f8e77a54823?w=800&q=80"
   },
   {
     id: "d6",
@@ -118,7 +123,8 @@ export const diseases = [
     cureUrdu: "کاپر یا میٹالاکسل پھپھوندی کش",
     dosage: "Paint trunk base with fungicide paste.",
     dosageUrdu: "تنے کے نچلے حصے پر دوائی کا لیپ کریں۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1592982537447-6f23f0bf7123?w=800&q=80"
   },
   {
     id: "d7",
@@ -131,7 +137,8 @@ export const diseases = [
     cureUrdu: "مینکوزیب (Mancozeb)",
     dosage: "3 gm/Litre of water.",
     dosageUrdu: "3 گرام فی لیٹر پانی۔",
-    severity: "Medium"
+    severity: "Medium",
+    image: "https://images.unsplash.com/photo-1589152121543-f9ec745e6566?w=800&q=80"
   },
   {
     id: "d8",
@@ -144,7 +151,8 @@ export const diseases = [
     cureUrdu: "سٹریپٹومائسن (اینٹی بائیوٹک)",
     dosage: "100 ppm spray during bloom.",
     dosageUrdu: "پھول آنے کے دوران سپرے کریں۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?w=800&q=80"
   },
   {
     id: "d9",
@@ -157,7 +165,8 @@ export const diseases = [
     cureUrdu: "کاپر آکسی کلورائیڈ",
     dosage: "Cut diseased branch and apply copper paste.",
     dosageUrdu: "بیمار شاخ کو کاٹ کر کاپر کا لیپ کریں۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1589152121543-f9ec745e6566?w=800&q=80"
   },
   {
     id: "d10",
@@ -170,7 +179,8 @@ export const diseases = [
     cureUrdu: "سائپر میتھرین یا مماثل دوا",
     dosage: "1.5 ml/Litre after petal fall.",
     dosageUrdu: "1.5 ملی لیٹر، پھول گرنے کے بعد۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1596704104278-68eecab902fb?w=800&q=80"
   },
   {
     id: "d11",
@@ -183,7 +193,8 @@ export const diseases = [
     cureUrdu: "کاپر والی پھپھوندی کش",
     dosage: "3 gm/Litre during early leafing.",
     dosageUrdu: "3 گرام فی لیٹر، نئے پتے نکلتے وقت۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1592982537447-6f23f0bf7123?w=800&q=80"
   },
   {
     id: "d12",
@@ -196,7 +207,8 @@ export const diseases = [
     cureUrdu: "کیڑے مار دوا",
     dosage: "Spray when nuts are pea-sized.",
     dosageUrdu: "جب اخروٹ مٹر کے دانے جتنا ہو تو سپرے کریں۔",
-    severity: "Medium"
+    severity: "Medium",
+    image: "https://images.unsplash.com/photo-1621689626127-6f8e77a54823?w=800&q=80"
   },
   {
     id: "d13",
@@ -209,7 +221,8 @@ export const diseases = [
     cureUrdu: "مینکوزیب",
     dosage: "2.5 gm/Litre of water.",
     dosageUrdu: "2.5 گرام فی لیٹر پانی۔",
-    severity: "Medium"
+    severity: "Medium",
+    image: "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&q=80"
   },
   {
     id: "d14",
@@ -222,7 +235,8 @@ export const diseases = [
     cureUrdu: "کیپٹان یا اسی طرح کی دوا",
     dosage: "2 gm/Litre after petal fall.",
     dosageUrdu: "2 گرام فی لیٹر، پھول گرنے کے بعد۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?w=800&q=80"
   },
   {
     id: "d15",
@@ -235,7 +249,8 @@ export const diseases = [
     cureUrdu: "مائکلوبیوٹانل (پھپھوندی کش)",
     dosage: "1.5 ml/Litre pre-harvest.",
     dosageUrdu: "1.5 ملی لیٹر، فصل اتارنے سے پہلے۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=800&q=80"
   },
   {
     id: "d16",
@@ -248,7 +263,8 @@ export const diseases = [
     cureUrdu: "کاپر آکسی کلورائیڈ",
     dosage: "3 gm/Litre at dormant stage.",
     dosageUrdu: "3 گرام فی لیٹر سردیوں میں۔",
-    severity: "Medium"
+    severity: "Medium",
+    image: "https://images.unsplash.com/photo-1596704104278-68eecab902fb?w=800&q=80"
   },
   {
     id: "d17",
@@ -261,7 +277,8 @@ export const diseases = [
     cureUrdu: "سردیوں میں کاپر کا سپرے",
     dosage: "Apply thoroughly before bud break.",
     dosageUrdu: "پھول نکلنے سے پہلے سپرے کریں۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&q=80"
   },
   {
     id: "d18",
@@ -274,7 +291,8 @@ export const diseases = [
     cureUrdu: "ٹرائی سائکلازول",
     dosage: "1 gm/Litre of water.",
     dosageUrdu: "1 گرام فی لیٹر پانی۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&q=80"
   },
   {
     id: "d19",
@@ -287,7 +305,8 @@ export const diseases = [
     cureUrdu: "مینکوزیب یا پروپیکونازول",
     dosage: "2 ml/Litre of water.",
     dosageUrdu: "2 ملی لیٹر فی لیٹر پانی۔",
-    severity: "Medium"
+    severity: "Medium",
+    image: "https://images.unsplash.com/photo-1592982537447-6f23f0bf7123?w=800&q=80"
   },
   {
     id: "d20",
@@ -300,7 +319,8 @@ export const diseases = [
     cureUrdu: "کارٹپ ہائیڈروکلورائیڈ",
     dosage: "Apply granules in standing water.",
     dosageUrdu: "کھڑے پانی میں دانے دار دوا ڈالیں۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1621689626127-6f8e77a54823?w=800&q=80"
   },
   {
     id: "d21",
@@ -313,7 +333,8 @@ export const diseases = [
     cureUrdu: "مینکوزیب",
     dosage: "2.5 gm/Litre of water.",
     dosageUrdu: "2.5 گرام فی لیٹر پانی۔",
-    severity: "Medium"
+    severity: "Medium",
+    image: "https://images.unsplash.com/photo-1596704104278-68eecab902fb?w=800&q=80"
   },
   {
     id: "d22",
@@ -326,7 +347,8 @@ export const diseases = [
     cureUrdu: "ایمامیکٹن بینزوایٹ",
     dosage: "0.5 gm/Litre of water.",
     dosageUrdu: "0.5 گرام فی لیٹر پانی۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1621689626127-6f8e77a54823?w=800&q=80"
   },
   {
     id: "d23",
@@ -339,7 +361,8 @@ export const diseases = [
     cureUrdu: "کاربینڈازم + مینکوزیب",
     dosage: "Dip corms in 2gm/Litre solution before planting.",
     dosageUrdu: "بونے سے پہلے گٹھوں کو 2 گرام فی لیٹر کے محلول میں ڈبوئیں۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&q=80"
   },
   {
     id: "d24",
@@ -352,7 +375,8 @@ export const diseases = [
     cureUrdu: "امیڈاکلوپرڈ",
     dosage: "0.5 ml/Litre of water.",
     dosageUrdu: "0.5 ملی لیٹر فی لیٹر پانی۔",
-    severity: "Medium"
+    severity: "Medium",
+    image: "https://images.unsplash.com/photo-1596704104278-68eecab902fb?w=800&q=80"
   },
   {
     id: "d25",
@@ -365,6 +389,7 @@ export const diseases = [
     cureUrdu: "میٹالاکسل + مینکوزیب",
     dosage: "2.5 gm/Litre of water.",
     dosageUrdu: "2.5 گرام فی لیٹر پانی۔",
-    severity: "High"
+    severity: "High",
+    image: "https://images.unsplash.com/photo-1592982537447-6f23f0bf7123?w=800&q=80"
   }
 ];
