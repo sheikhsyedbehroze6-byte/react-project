@@ -250,7 +250,7 @@ export const diseases = [
     dosage: "1.5 ml/Litre pre-harvest.",
     dosageUrdu: "1.5 ملی لیٹر، فصل اتارنے سے پہلے۔",
     severity: "High",
-    image: "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=800&q=80"
+    image: "/brown-rot.png"
   },
   {
     id: "d16",
