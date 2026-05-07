@@ -99,6 +99,9 @@ export default function Home() {
 
         <div className="products-grid" style={{ marginBottom: '4rem' }}>
           <AnimatedSection className="glow-card" delay={0.2} style={{ 
+            position: 'relative', overflow: 'hidden', borderRadius: '16px', height: '320px',
+            boxShadow: '0 15px 30px rgba(0,0,0,0.1)'
+          }}>
             <motion.img 
               src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&q=80" 
               alt="Quality Products"
@@ -115,6 +118,9 @@ export default function Home() {
           </AnimatedSection>
 
           <AnimatedSection className="glow-card" delay={0.4} style={{ 
+            position: 'relative', overflow: 'hidden', borderRadius: '16px', height: '320px',
+            boxShadow: '0 15px 30px rgba(0,0,0,0.1)'
+          }}>
             <motion.img 
               src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" 
               alt="Disease Protection"
@@ -131,6 +137,9 @@ export default function Home() {
           </AnimatedSection>
 
           <AnimatedSection className="glow-card" delay={0.6} style={{ 
+            position: 'relative', overflow: 'hidden', borderRadius: '16px', height: '320px',
+            boxShadow: '0 15px 30px rgba(0,0,0,0.1)'
+          }}>
             <motion.img 
               src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80" 
               alt="Local Expertise"
