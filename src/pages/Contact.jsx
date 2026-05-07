@@ -90,6 +90,7 @@ export default function Contact() {
             <button type="submit">Ask Us</button>
           </form>
         </AnimatedSection>
+      </div>
       <AnimatedSection delay={0.6} style={{ marginTop: '4rem' }}>
         <div style={{ 
           position: 'relative', 
