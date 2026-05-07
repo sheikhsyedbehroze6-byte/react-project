@@ -519,7 +519,6 @@ footer p {
   box-shadow: 0 0 10px rgba(26, 93, 26, 0.5);
 }
 
-@media (max-width: 768px) {
 /* Mobile Navigation */
 @media (max-width: 900px) {
   .desktop-nav {
