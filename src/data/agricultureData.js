@@ -68,7 +68,7 @@ export const diseases = [
     dosage: "1.5 ml/Litre mixed with horticultural oil.",
     dosageUrdu: "1.5 ملی لیٹر فی لیٹر تیل کے ساتھ ملا کر۔",
     severity: "High",
-    image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&q=80"
+    image: "/san-jose-scale.jpg"
   },
   {
     id: "d3",
