@@ -38,7 +38,7 @@ export default function About() {
           <p>Providing the highest quality agricultural solutions to Kashmiri farmers.</p>
           
           <motion.div 
-            style={{ marginTop: '2rem', marginBottom: '3rem', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', maxWidth: '1000px', margin: '2rem auto' }}
+            style={{ marginTop: '2rem', marginBottom: '3rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', maxWidth: '1000px', margin: '2rem auto' }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
@@ -48,7 +48,7 @@ export default function About() {
               <img 
                 src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=600&q=80" 
                 alt="Fresh Carrots" 
-                style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 30px rgba(0,0,0,0.2)', border: '4px solid white' }} 
+                style={{ width: '100%', height: '250px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 30px rgba(0,0,0,0.2)', border: '4px solid white' }} 
               />
             </motion.div>
             
@@ -57,7 +57,7 @@ export default function About() {
               <img 
                 src="https://images.unsplash.com/photo-1508747703725-719777637510?w=800&q=80" 
                 alt="Fresh Potatoes" 
-                style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 30px rgba(0,0,0,0.2)', border: '4px solid white' }} 
+                style={{ width: '100%', height: '250px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 30px rgba(0,0,0,0.2)', border: '4px solid white' }} 
               />
             </motion.div>
             
@@ -66,7 +66,16 @@ export default function About() {
               <img 
                 src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=800&q=80" 
                 alt="Apple Orchard" 
-                style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 30px rgba(0,0,0,0.2)', border: '4px solid white' }} 
+                style={{ width: '100%', height: '250px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 30px rgba(0,0,0,0.2)', border: '4px solid white' }} 
+              />
+            </motion.div>
+
+            {/* Tomato */}
+            <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring" }}>
+              <img 
+                src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=800&q=80" 
+                alt="Fresh Tomatoes" 
+                style={{ width: '100%', height: '250px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 30px rgba(0,0,0,0.2)', border: '4px solid white' }} 
               />
             </motion.div>
           </motion.div>
