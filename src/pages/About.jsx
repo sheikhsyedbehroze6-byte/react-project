@@ -114,11 +114,11 @@ export default function About() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.4} style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', padding: '2rem', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
-              <div style={{ background: 'white', padding: '1rem', borderRadius: '12px', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center', border: '1px solid #eee' }}>
+              <div style={{ background: 'transparent', padding: '1rem', borderRadius: '12px', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
                 <img 
-                  src="/authenticity-guarantee.svg" 
-                  alt="Authenticity Guarantee" 
-                  style={{ height: '80px', objectFit: 'contain' }} 
+                  src="/trusted-seller.svg" 
+                  alt="Trusted Seller Badge" 
+                  style={{ height: '140px', objectFit: 'contain' }} 
                 />
               </div>
               <h3 style={{ color: 'var(--primary-color)', marginBottom: '0.5rem' }}>Guaranteed Authenticity</h3>
