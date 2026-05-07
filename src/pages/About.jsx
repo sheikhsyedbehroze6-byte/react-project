@@ -64,7 +64,7 @@ export default function About() {
             {/* Apple Orchard */}
             <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring" }}>
               <img 
-                src="https://images.unsplash.com/photo-1591122940251-c063529b35bc?w=600&q=80" 
+                src="/apple-orchard-real.jpg" 
                 alt="Apple Orchard" 
                 style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 30px rgba(0,0,0,0.2)', border: '4px solid white' }} 
               />
