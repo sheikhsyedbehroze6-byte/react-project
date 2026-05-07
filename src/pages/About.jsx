@@ -90,7 +90,7 @@ export default function About() {
               At MA Pesticides, we believe that the health of your crops directly translates to the prosperity of our community. That is why we refuse to compromise on quality. 
             </p>
             <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
-              We specialize in providing <strong>100% genuine, foreign-branded products</strong> from world-renowned agricultural science companies like <strong>Bayer</strong> and <strong>Syngenta</strong>. By bringing these international standards directly to Lal Chowk, we ensure that you get the most effective, research-backed solutions available globally.
+              We specialize in providing <strong>100% genuine, foreign-branded products</strong> from world-renowned agricultural science companies like <strong>Bayer</strong> and <strong>Syngenta</strong> and many more. By bringing these international standards directly to Lal Chowk, we ensure that you get the most effective, research-backed solutions available globally.
             </p>
 
             {/* Product Images Grid */}
