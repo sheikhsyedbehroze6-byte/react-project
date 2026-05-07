@@ -155,6 +155,37 @@ export default function Home() {
             </div>
           </AnimatedSection>
         </div>
+
+        {/* Trusted Partners Section */}
+        <AnimatedSection className="section-header" delay={0.1} style={{ marginTop: '6rem', marginBottom: '3rem' }}>
+          <h2 style={{ fontSize: '2.5rem', color: 'var(--primary-color)' }}>Our Trusted Partners</h2>
+          <p style={{ fontSize: '1.2rem' }}>We supply premium products from the world's leading agricultural companies like Bayer, Syngenta, and many more.</p>
+        </AnimatedSection>
+        
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          alignItems: 'center', 
+          gap: '5rem', 
+          flexWrap: 'wrap',
+          marginBottom: '6rem',
+          opacity: 0.8
+        }}>
+          <motion.div whileHover={{ scale: 1.1, opacity: 1 }} style={{ textAlign: 'center' }}>
+            <h3 style={{ color: '#0091df', fontSize: '2.5rem', fontWeight: '900', margin: 0 }}>BAYER</h3>
+            <p style={{ margin: 0, fontSize: '0.9rem', color: '#666' }}>Global Leader</p>
+          </motion.div>
+          
+          <motion.div whileHover={{ scale: 1.1, opacity: 1 }} style={{ textAlign: 'center' }}>
+            <h3 style={{ color: '#ff7900', fontSize: '2.5rem', fontWeight: '900', margin: 0 }}>syngenta</h3>
+            <p style={{ margin: 0, fontSize: '0.9rem', color: '#666' }}>Innovation Driven</p>
+          </motion.div>
+
+          <motion.div whileHover={{ scale: 1.1, opacity: 1 }} style={{ textAlign: 'center' }}>
+            <h3 style={{ color: 'var(--primary-color)', fontSize: '2.5rem', fontWeight: '900', margin: 0 }}>& MORE</h3>
+            <p style={{ margin: 0, fontSize: '0.9rem', color: '#666' }}>Quality First</p>
+          </motion.div>
+        </div>
       </div>
     </div>
   );
