@@ -55,8 +55,8 @@ export default function About() {
             {/* Potato */}
             <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring" }}>
               <img 
-                src="https://images.unsplash.com/photo-1508747703725-719777637510?w=600&q=80" 
-                alt="Fresh Potatoes in Basket" 
+                src="https://images.unsplash.com/photo-1508747703725-719777637510?w=800&q=80" 
+                alt="Fresh Potatoes" 
                 style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 30px rgba(0,0,0,0.2)', border: '4px solid white' }} 
               />
             </motion.div>
@@ -64,7 +64,7 @@ export default function About() {
             {/* Apple Orchard */}
             <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring" }}>
               <img 
-                src="/apple-orchard-real.jpg" 
+                src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=800&q=80" 
                 alt="Apple Orchard" 
                 style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 30px rgba(0,0,0,0.2)', border: '4px solid white' }} 
               />
