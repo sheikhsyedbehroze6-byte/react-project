@@ -72,33 +72,40 @@ export default function About() {
             </p>
 
             {/* Product Images Grid */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginTop: '1rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginTop: '1rem' }}>
               <div style={{ textAlign: 'center' }}>
                 <motion.img 
-                  src="/antracol.png" 
-                  alt="Bayer Products" 
-                  style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', border: '3px solid var(--border-color)' }}
+                  src="/antracol.jpg" 
+                  alt="Bayer Antracol" 
+                  style={{ width: '100%', height: '250px', objectFit: 'contain', borderRadius: '12px', border: '1px solid var(--border-color)', background: 'white', padding: '10px' }}
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring" }}
                 />
-                <h4 style={{ marginTop: '0.8rem', color: 'var(--text-main)' }}>Bayer CropScience Range</h4>
+                <h4 style={{ marginTop: '0.8rem', color: 'var(--text-main)' }}>Bayer Antracol</h4>
               </div>
               <div style={{ textAlign: 'center' }}>
                 <motion.img 
-                  src="/syngenta.png" 
-                  alt="Syngenta Products" 
-                  style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', border: '3px solid var(--border-color)' }}
+                  src="/alika.png" 
+                  alt="Syngenta Alika" 
+                  style={{ width: '100%', height: '250px', objectFit: 'contain', borderRadius: '12px', border: '1px solid var(--border-color)', background: 'white', padding: '10px' }}
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring" }}
                 />
-                <h4 style={{ marginTop: '0.8rem', color: 'var(--text-main)' }}>Syngenta Premium Solutions</h4>
+                <h4 style={{ marginTop: '0.8rem', color: 'var(--text-main)' }}>Syngenta Alika</h4>
               </div>
             </div>
           </AnimatedSection>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-            <AnimatedSection delay={0.3} style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', padding: '2rem', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)' }}>
-              <Globe size={32} color="var(--primary-color)" style={{ marginBottom: '1rem' }} />
+            <AnimatedSection delay={0.3} style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', padding: '2rem', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
+              <div style={{ background: '#2c3e50', padding: '1.5rem', borderRadius: '12px', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
+                <img 
+                  src="/global-standards.png" 
+                  alt="Global Standards Logo" 
+                  onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?w=400&q=80"; }}
+                  style={{ height: '80px', objectFit: 'contain' }} 
+                />
+              </div>
               <h3 style={{ color: 'var(--primary-color)', marginBottom: '0.5rem' }}>Global Standards</h3>
               <p style={{ color: 'var(--text-muted)' }}>We import and supply products that meet rigorous international testing standards, ensuring maximum efficacy against local Kashmiri crop diseases.</p>
             </AnimatedSection>
