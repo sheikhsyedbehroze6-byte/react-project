@@ -1,0 +1,9 @@
+<svg width="300" height="100" viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="10" y="40" fill="black" style="font-family: Arial, sans-serif; font-size: 32px; font-weight: 500;">Authenticity</text>
+  <text x="10" y="85" fill="black" style="font-family: Arial, sans-serif; font-size: 40px; font-weight: bold;">Guarantee</text>
+  <path d="M255 75C255 83.2843 248.284 90 240 90C231.716 90 225 83.2843 225 75C225 66.7157 231.716 60 240 60C248.284 60 255 66.7157 255 75Z" fill="#3B5998"/>
+  <path d="M232 75L237 80L248 69" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Scalloped edges for the badge -->
+  <path d="M240 60L244 62L248 60L252 62L255 65L253 69L255 73L253 77L255 81L252 85L248 83L244 85L240 83L236 85L232 83L228 85L225 81L227 77L225 73L227 69L225 65L228 62L232 60L236 62L240 60Z" fill="#3B5998"/>
+  <path d="M232 75L237 80L248 69" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

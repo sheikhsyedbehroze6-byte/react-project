@@ -113,8 +113,14 @@ export default function About() {
               <p style={{ color: 'var(--text-muted)' }}>We import and supply products that meet rigorous international testing standards, ensuring maximum efficacy against local Kashmiri crop diseases.</p>
             </AnimatedSection>
 
-            <AnimatedSection delay={0.4} style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', padding: '2rem', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)' }}>
-              <ShieldCheck size={32} color="var(--primary-color)" style={{ marginBottom: '1rem' }} />
+            <AnimatedSection delay={0.4} style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', padding: '2rem', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '12px', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center', border: '1px solid #eee' }}>
+                <img 
+                  src="/authenticity-guarantee.svg" 
+                  alt="Authenticity Guarantee" 
+                  style={{ height: '80px', objectFit: 'contain' }} 
+                />
+              </div>
               <h3 style={{ color: 'var(--primary-color)', marginBottom: '0.5rem' }}>Guaranteed Authenticity</h3>
               <p style={{ color: 'var(--text-muted)' }}>Counterfeit pesticides can destroy an entire season's harvest. We guarantee the authenticity of every Bayer and Syngenta product you purchase from us.</p>
             </AnimatedSection>
