@@ -38,6 +38,7 @@ export default function About() {
           <p>Providing the highest quality agricultural solutions to Kashmiri farmers.</p>
           
           <motion.div 
+            className="about-collage"
             style={{ marginTop: '2rem', marginBottom: '3rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', maxWidth: '1000px', margin: '2rem auto' }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
