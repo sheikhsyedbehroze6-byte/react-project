@@ -42,20 +42,24 @@ export default function About() {
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring" }}
           >
-            <img 
-              src="/apple.jpg" 
-              alt="Fresh Kashmiri Apples" 
-              onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=1200&q=80"; }}
-              style={{ 
-                width: '100%', 
-                maxWidth: '800px', 
-                height: '400px', 
-                objectFit: 'cover', 
-                borderRadius: '20px', 
-                boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
-                border: '4px solid white'
-              }} 
-            />
+            <div style={{ 
+              width: '100%', 
+              maxWidth: '800px', 
+              height: '400px', 
+              background: '#2c3e50', 
+              display: 'flex', 
+              justifyContent: 'center', 
+              alignItems: 'center',
+              borderRadius: '20px',
+              boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
+              border: '4px solid white'
+            }}>
+              <img 
+                src="/global-standards.svg" 
+                alt="Global Standards" 
+                style={{ width: '60%', height: 'auto', objectFit: 'contain' }} 
+              />
+            </div>
           </motion.div>
         </AnimatedSection>
 
@@ -100,9 +104,8 @@ export default function About() {
             <AnimatedSection delay={0.3} style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', padding: '2rem', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
               <div style={{ background: '#2c3e50', padding: '1.5rem', borderRadius: '12px', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
                 <img 
-                  src="/global-standards.png" 
+                  src="/global-standards.svg" 
                   alt="Global Standards Logo" 
-                  onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?w=400&q=80"; }}
                   style={{ height: '80px', objectFit: 'contain' }} 
                 />
               </div>
