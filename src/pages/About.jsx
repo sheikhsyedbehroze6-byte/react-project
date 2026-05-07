@@ -38,28 +38,37 @@ export default function About() {
           <p>Providing the highest quality agricultural solutions to Kashmiri farmers.</p>
           
           <motion.div 
-            style={{ marginTop: '2rem', marginBottom: '2rem', display: 'flex', justifyContent: 'center' }}
-            whileHover={{ scale: 1.02 }}
-            transition={{ type: "spring" }}
+            style={{ marginTop: '2rem', marginBottom: '3rem', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', maxWidth: '1000px', margin: '2rem auto' }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
           >
-            <div style={{ 
-              width: '100%', 
-              maxWidth: '800px', 
-              height: '400px', 
-              background: '#2c3e50', 
-              display: 'flex', 
-              justifyContent: 'center', 
-              alignItems: 'center',
-              borderRadius: '20px',
-              boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
-              border: '4px solid white'
-            }}>
+            {/* Carrot */}
+            <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring" }}>
               <img 
-                src="/global-standards.svg" 
-                alt="Global Standards" 
-                style={{ width: '60%', height: 'auto', objectFit: 'contain' }} 
+                src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=600&q=80" 
+                alt="Fresh Carrots" 
+                style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 30px rgba(0,0,0,0.2)', border: '4px solid white' }} 
               />
-            </div>
+            </motion.div>
+            
+            {/* Tomato */}
+            <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring" }}>
+              <img 
+                src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=600&q=80" 
+                alt="Organic Tomatoes" 
+                style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 30px rgba(0,0,0,0.2)', border: '4px solid white' }} 
+              />
+            </motion.div>
+            
+            {/* Apple Tree */}
+            <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring" }}>
+              <img 
+                src="https://images.unsplash.com/photo-1591122940251-c063529b35bc?w=600&q=80" 
+                alt="Apple Orchard" 
+                style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 30px rgba(0,0,0,0.2)', border: '4px solid white' }} 
+              />
+            </motion.div>
           </motion.div>
         </AnimatedSection>
 
