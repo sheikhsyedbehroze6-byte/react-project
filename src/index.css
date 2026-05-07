@@ -82,20 +82,33 @@ header {
   gap: 2rem;
 }
 
+.nav-links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
   font-size: 1.1rem;
   padding: 0.5rem 0;
   position: relative;
+  transition: color 0.3s ease;
 }
 
 .nav-links a::after {
   content: '';
   position: absolute;
-  width: 0;
-  height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--secondary-color);
+  width: 0%;
+  height: 2px;
+  background: var(--secondary-color);
   transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after, .nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: white;
 }
 
 .nav-links a:hover::after, .nav-links a.active::after {
@@ -239,14 +252,25 @@ footer p {
   margin-top: 2rem;
 }
 
-.product-card {
-  composes: card-glass;
+.product-card, .disease-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
   border-radius: 12px;
 }
 
+.product-card:hover, .disease-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(26, 93, 26, 0.15);
+  border-color: var(--primary-color);
+}
+
 .disease-card {
-  composes: card-glass;
-  border-radius: 12px;
   padding: 1.5rem;
 }
 
