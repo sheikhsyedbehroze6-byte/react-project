@@ -17,7 +17,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  cursor: none; /* We'll use a custom cursor */
 }
 
 body {
@@ -503,30 +502,7 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
-/* Global Enhancements */
-.custom-cursor {
-  width: 20px;
-  height: 20px;
-  background: var(--primary-color);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: difference;
-  transition: transform 0.1s ease;
-}
-
-.custom-cursor-follower {
-  width: 40px;
-  height: 40px;
-  border: 2px solid var(--primary-color);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9998;
-  transition: transform 0.2s ease-out;
-}
-
+/* Scroll Progress */
 .scroll-progress {
   position: fixed;
   top: 0;
@@ -539,6 +515,7 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  * { cursor: auto !important; }
-  .custom-cursor, .custom-cursor-follower { display: none; }
+  .products-grid, .diseases-grid {
+    grid-template-columns: 1fr;
+  }
 }
