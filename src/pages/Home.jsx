@@ -59,7 +59,7 @@ export default function Home() {
         height: '90vh', 
         display: 'flex', 
         alignItems: 'center',
-        background: 'url("https://images.unsplash.com/photo-1615485290382-441e4d0c9cb5?w=1600&q=80") center/cover no-repeat'
+        background: 'url("/shop.jpg") center/cover no-repeat'
       }}>
         <div style={{ 
           position: 'absolute', 
