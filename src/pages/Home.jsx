@@ -53,7 +53,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className="hero" style={{ position: 'relative', overflow: 'hidden' }}>
+      <section className="hero animated-vibrant-bg" style={{ position: 'relative', overflow: 'hidden' }}>
         
         {/* Falling Leaves Effect */}
         {leaves.map(leaf => (
@@ -69,7 +69,7 @@ export default function Home() {
 
         <div className="hero-content" style={{ position: 'relative', zIndex: 2 }}>
           <AnimatedSection delay={0.2} className="hero-text" style={{ padding: '2rem', background: 'rgba(26, 93, 26, 0.4)', backdropFilter: 'blur(10px)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.2)' }}>
-            <h1 style={{ color: '#fce043' }}>Welcome to MA Pesticides</h1>
+            <h1 className="rainbow-text" style={{ color: '#fce043' }}>Welcome to MA Pesticides</h1>
             <p>Your Trusted Agricultural Partner near Lal Chowk, Srinagar.</p>
             <p style={{ fontSize: '1.2rem', color: '#e0e0e0' }}>Premium quality fertilizers, pesticides, and expert farming advice for a bountiful harvest.</p>
             <Link to="/products" className="cta-button" style={{ marginTop: '2rem' }}>
@@ -98,10 +98,7 @@ export default function Home() {
         </AnimatedSection>
 
         <div className="products-grid" style={{ marginBottom: '4rem' }}>
-          <AnimatedSection delay={0.2} style={{ 
-            position: 'relative', overflow: 'hidden', borderRadius: '16px', height: '320px',
-            boxShadow: '0 15px 30px rgba(0,0,0,0.1)'
-          }}>
+          <AnimatedSection className="glow-card" delay={0.2} style={{ 
             <motion.img 
               src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&q=80" 
               alt="Quality Products"
@@ -117,10 +114,7 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.4} style={{ 
-            position: 'relative', overflow: 'hidden', borderRadius: '16px', height: '320px',
-            boxShadow: '0 15px 30px rgba(0,0,0,0.1)'
-          }}>
+          <AnimatedSection className="glow-card" delay={0.4} style={{ 
             <motion.img 
               src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" 
               alt="Disease Protection"
@@ -136,10 +130,7 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.6} style={{ 
-            position: 'relative', overflow: 'hidden', borderRadius: '16px', height: '320px',
-            boxShadow: '0 15px 30px rgba(0,0,0,0.1)'
-          }}>
+          <AnimatedSection className="glow-card" delay={0.6} style={{ 
             <motion.img 
               src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80" 
               alt="Local Expertise"

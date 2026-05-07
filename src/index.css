@@ -11,6 +11,11 @@
   --text-main: #1a202c;
   --text-muted: #4a5568;
   --border-color: rgba(226, 232, 240, 0.8);
+  --vibrant-green: #00ff88;
+  --vibrant-yellow: #fce043;
+  --vibrant-blue: #00d2ff;
+  --vibrant-pink: #ff00cc;
+  --vibrant-orange: #ffab40;
 }
 
 * {
@@ -518,4 +523,50 @@ footer p {
   .products-grid, .diseases-grid {
     grid-template-columns: 1fr;
   }
+/* Vibrant Background Animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-vibrant-bg {
+  background: linear-gradient(-45deg, #1a5d1a, #2c3e50, #1a5d1a, #0091df, #ff1744);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+/* Glow Effects & Colorful Cards */
+.glow-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glow-card:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.3), 0 0 60px rgba(0, 210, 255, 0.2);
+  transform: translateY(-10px) scale(1.02);
+  border-color: var(--vibrant-green);
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Rainbow Border Text */
+.rainbow-text {
+  background: linear-gradient(to right, #fce043, #00ff88, #00d2ff, #ff00cc, #fce043);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-flow 4s linear infinite;
+}
+
+@keyframes rainbow-flow {
+  to { background-position: 200% center; }
 }

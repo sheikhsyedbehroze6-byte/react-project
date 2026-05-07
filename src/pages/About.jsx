@@ -24,7 +24,7 @@ const SwayingTree = ({ delay, left, size, color }) => {
 
 export default function About() {
   return (
-    <div style={{ position: 'relative', overflow: 'hidden', minHeight: '80vh', paddingBottom: '4rem' }}>
+    <div className="animated-vibrant-bg" style={{ position: 'relative', overflow: 'hidden', minHeight: '80vh', paddingBottom: '4rem' }}>
       
       {/* Animated Orchard Background */}
       <SwayingTree delay={0.2} left="5%" size={250} color="var(--primary-color)" />
@@ -34,7 +34,7 @@ export default function About() {
 
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>
         <AnimatedSection className="section-header">
-          <h2>About MA Pesticides</h2>
+          <h2 className="rainbow-text" style={{ fontSize: '3rem' }}>About MA Pesticides</h2>
           <p>Providing the highest quality agricultural solutions to Kashmiri farmers.</p>
           
           <motion.div 
@@ -119,7 +119,7 @@ export default function About() {
           </AnimatedSection>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-            <AnimatedSection delay={0.3} style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', padding: '2rem', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
+            <AnimatedSection className="glow-card" delay={0.3} style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', padding: '2rem', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
               <div style={{ background: '#2c3e50', padding: '1.5rem', borderRadius: '12px', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
                 <img 
                   src="/global-standards.svg" 
@@ -131,7 +131,7 @@ export default function About() {
               <p style={{ color: 'var(--text-muted)' }}>We import and supply products that meet rigorous international testing standards, ensuring maximum efficacy against local Kashmiri crop diseases.</p>
             </AnimatedSection>
 
-            <AnimatedSection delay={0.4} style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', padding: '2rem', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
+            <AnimatedSection className="glow-card" delay={0.4} style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', padding: '2rem', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
               <div style={{ background: 'transparent', padding: '1rem', borderRadius: '12px', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
                 <img 
                   src="/trusted-seller.svg" 
