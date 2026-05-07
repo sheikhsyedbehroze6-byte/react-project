@@ -90,7 +90,34 @@ export default function Contact() {
             <button type="submit">Ask Us</button>
           </form>
         </AnimatedSection>
-      </div>
+      <AnimatedSection delay={0.6} style={{ marginTop: '4rem' }}>
+        <div style={{ 
+          position: 'relative', 
+          height: '400px', 
+          borderRadius: '20px', 
+          overflow: 'hidden',
+          boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
+        }}>
+          <img 
+            src="https://images.unsplash.com/photo-1444858291040-58f756a3bdd6?w=1600&q=80" 
+            alt="Wheat Fields" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+          <div style={{ 
+            position: 'absolute', 
+            inset: 0, 
+            background: 'linear-gradient(to top, rgba(26, 93, 26, 0.8), transparent)',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-end',
+            padding: '3rem',
+            color: 'white'
+          }}>
+            <h3 style={{ color: 'white', fontSize: '2rem', marginBottom: '0.5rem' }}>Supporting a Bountiful Harvest</h3>
+            <p style={{ fontSize: '1.2rem', maxWidth: '600px' }}>Our products are designed to protect your hard work and ensure the highest quality yield for your fields.</p>
+          </div>
+        </div>
+      </AnimatedSection>
     </div>
   );
 }
