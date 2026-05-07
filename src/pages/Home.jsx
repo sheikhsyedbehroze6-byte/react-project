@@ -53,41 +53,72 @@ export default function Home() {
 
   return (
     <div>
-      <section className="hero" style={{ position: 'relative', overflow: 'hidden' }}>
-        
+      <section className="hero" style={{ 
+        position: 'relative', 
+        overflow: 'hidden', 
+        height: '90vh', 
+        display: 'flex', 
+        alignItems: 'center',
+        background: 'url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&q=80") center/cover no-repeat'
+      }}>
+        <div style={{ 
+          position: 'absolute', 
+          inset: 0, 
+          background: 'linear-gradient(to right, rgba(26, 93, 26, 0.8), rgba(0,0,0,0.3))',
+          zIndex: 1
+        }}></div>
+
         {/* Falling Leaves Effect */}
         {leaves.map(leaf => (
           <FallingLeaf key={leaf.id} {...leaf} />
         ))}
 
-        {/* Growing Plants at the bottom */}
-        <GrowingPlant Icon={Sprout} delay={0.5} left="5%" size={80} color="#81c784" />
-        <GrowingPlant Icon={Flower2} delay={1.2} left="15%" size={60} color="#fce043" />
-        <GrowingPlant Icon={Sprout} delay={0.8} left="85%" size={100} color="#4caf50" />
-        <GrowingPlant Icon={Flower2} delay={1.5} left="75%" size={50} color="#ffab91" />
-        <GrowingPlant Icon={Sprout} delay={2.0} left="45%" size={70} color="#a5d6a7" />
-
-        <div className="hero-content" style={{ position: 'relative', zIndex: 2 }}>
-          <AnimatedSection delay={0.2} className="hero-text" style={{ padding: '2rem', background: 'rgba(26, 93, 26, 0.4)', backdropFilter: 'blur(10px)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.2)' }}>
-            <h1 style={{ color: '#fce043' }}>Welcome to MA Pesticides</h1>
-            <p>Your Trusted Agricultural Partner near Lal Chowk, Srinagar.</p>
-            <p style={{ fontSize: '1.2rem', color: '#e0e0e0' }}>Premium quality fertilizers, pesticides, and expert farming advice for a bountiful harvest.</p>
-            <Link to="/products" className="cta-button" style={{ marginTop: '2rem' }}>
-              Explore Our Products <ArrowRight size={20} />
-            </Link>
-          </AnimatedSection>
-          
-          <AnimatedSection delay={0.6} className="hero-image-container">
-            <motion.img 
-              src="/shop.jpg" 
-              alt="M.A. Pesticides Shop" 
-              className="hero-image" 
-              onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1592982537447-6f23f0bf7123?w=800&q=80"; }} 
-              whileHover={{ scale: 1.05, rotate: 2 }}
-              transition={{ type: "spring", stiffness: 300 }}
-              style={{ border: '6px solid white', borderRadius: '20px', boxShadow: '0 25px 50px rgba(0,0,0,0.5)' }}
-            />
-          </AnimatedSection>
+        <div className="container" style={{ position: 'relative', zIndex: 2, display: 'flex', alignItems: 'center' }}>
+          <div className="hero-content" style={{ display: 'flex', width: '100%', alignItems: 'center', gap: '4rem' }}>
+            <AnimatedSection delay={0.2} className="hero-text">
+              <h1 style={{ color: '#fce043', fontSize: '4.5rem', textShadow: 'none' }}>Global Standards in Local Farming</h1>
+              <p style={{ fontSize: '1.8rem', color: 'white', fontWeight: '500', marginBottom: '1.5rem' }}>Your Trusted Agricultural Partner in Srinagar.</p>
+              <p style={{ fontSize: '1.2rem', color: '#e0e0e0', maxWidth: '600px', marginBottom: '2.5rem' }}>
+                We bring world-class pesticides and fertilizers to the heart of Kashmir, ensuring your crops meet international quality standards.
+              </p>
+              <Link to="/products" className="cta-button" style={{ 
+                padding: '1.2rem 2.5rem', 
+                fontSize: '1.2rem', 
+                backgroundColor: 'var(--secondary-color)',
+                color: 'var(--primary-color)',
+                borderRadius: '50px',
+                boxShadow: '0 10px 30px rgba(252, 224, 67, 0.3)'
+              }}>
+                Explore Our Range <ArrowRight size={24} />
+              </Link>
+            </AnimatedSection>
+            
+            <AnimatedSection delay={0.6} className="hero-image-container" style={{ display: 'flex', justifyContent: 'flex-end' }}>
+              <motion.div 
+                style={{ 
+                  padding: '1rem', 
+                  background: 'rgba(255,255,255,0.1)', 
+                  backdropFilter: 'blur(10px)', 
+                  borderRadius: '30px', 
+                  border: '1px solid rgba(255,255,255,0.2)' 
+                }}
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.5 }}
+              >
+                <img 
+                  src="/shop.jpg" 
+                  alt="M.A. Pesticides Shop" 
+                  className="hero-image" 
+                  onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1592982537447-6f23f0bf7123?w=800&q=80"; }} 
+                  style={{ 
+                    width: '450px', 
+                    borderRadius: '20px', 
+                    boxShadow: '0 25px 50px rgba(0,0,0,0.3)' 
+                  }}
+                />
+              </motion.div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 
