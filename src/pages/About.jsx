@@ -99,6 +99,7 @@ export default function About() {
                 <motion.img 
                   src="/antracol.jpg" 
                   alt="Bayer Antracol" 
+                  onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1592982537447-6f23f0bf7123?w=800&q=80"; }}
                   style={{ width: '100%', height: '250px', objectFit: 'contain', borderRadius: '12px', border: '1px solid var(--border-color)', background: 'white', padding: '10px' }}
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring" }}
@@ -109,6 +110,7 @@ export default function About() {
                 <motion.img 
                   src="/alika.png" 
                   alt="Syngenta Alika" 
+                  onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1628352081506-83c43123ed6d?w=800&q=80"; }}
                   style={{ width: '100%', height: '250px', objectFit: 'contain', borderRadius: '12px', border: '1px solid var(--border-color)', background: 'white', padding: '10px' }}
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring" }}

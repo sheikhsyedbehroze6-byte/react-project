@@ -520,9 +520,15 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .products-grid, .diseases-grid {
-    grid-template-columns: 1fr;
+/* Mobile Navigation */
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
   }
+  .mobile-toggle {
+    display: block !important;
+  }
+}
 /* Vibrant Background Animation */
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
