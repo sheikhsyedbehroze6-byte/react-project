@@ -3,12 +3,19 @@ import AnimatedSection from '../components/AnimatedSection';
 import { MapPin, Phone, Mail, Clock, CheckCircle } from 'lucide-react';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '', website: '' });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, email, subject, message } = formData;
+    const { name, email, subject, message, website } = formData;
+    
+    // Security Honeypot Check: If the hidden 'website' field is filled, it's likely a bot
+    if (website) {
+      console.log("Bot detected!");
+      return;
+    }
+
     const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
     const mailtoUrl = `mailto:info@mapesticides.ac.in?subject=Website Query: ${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
@@ -16,7 +23,7 @@ export default function Contact() {
     window.location.href = mailtoUrl;
     
     setIsSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setFormData({ name: '', email: '', subject: '', message: '', website: '' });
     
     setTimeout(() => setIsSubmitted(false), 5000);
   };
@@ -82,6 +89,9 @@ export default function Contact() {
                 <span>Redirecting to your email client...</span>
               </div>
             )}
+
+            {/* Honeypot field (hidden from users) */}
+            <input type="text" name="website" value={formData.website} onChange={handleChange} style={{ display: 'none' }} tabIndex="-1" autoComplete="off" />
 
             <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
             <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
