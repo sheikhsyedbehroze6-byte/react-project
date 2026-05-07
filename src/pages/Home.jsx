@@ -59,7 +59,7 @@ export default function Home() {
         height: '90vh', 
         display: 'flex', 
         alignItems: 'center',
-        background: 'url("/shop.jpg") center/cover no-repeat'
+        background: 'url("/authenticity-guarantee.svg") center/contain no-repeat #f8faf8'
       }}>
         <div style={{ 
           position: 'absolute', 
